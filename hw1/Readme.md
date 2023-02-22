@@ -1,6 +1,6 @@
 # Instructions for hw1
 
-In this homework we will perform a video classification task (10-class classification, 7k samples for training and 2280 samples for testing) using audio-only features.
+In this homework we will perform a video classification task (10-class classification, 5k samples for training and 2280 samples for testing) using audio-only features.
 
 ## Data and Labels
 
