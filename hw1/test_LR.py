@@ -35,8 +35,6 @@ if __name__ == '__main__':
     # HW00006228
     video_id = os.path.splitext(line.strip())[0]
     video_ids.append(video_id)
-    # pdb.set_trace()
-    #feat_filepath = os.path.join(args.feat_dir, video_id + ".kmeans.csv")
     feat_filepath = os.path.join(args.feat_dir, video_id + args.feat_appendix)
     if not os.path.exists(feat_filepath):
       feat_list.append(np.zeros(args.feat_dim))

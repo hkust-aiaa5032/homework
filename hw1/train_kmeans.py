@@ -23,7 +23,7 @@ if __name__ == '__main__':
     # 1. load all mfcc features in one array
     selection = pd.read_csv(mfcc_csv_file, sep=';', dtype='float')
 
-    # perform kmeans clustering here
+    # TA: perform kmeans clustering here. get a model file variable kmeans
 
 
     # 2. Save trained model

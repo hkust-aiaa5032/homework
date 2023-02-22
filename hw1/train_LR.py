@@ -48,6 +48,6 @@ if __name__ == '__main__':
 
 
   # save trained SVM in output_file
-  pickle.dump(clf, open(args.output_file, 'wb'))
+  pickle.dump(model, open(args.output_file, 'wb'))
   print('LR trained successfully')
 

@@ -1,5 +1,3 @@
-# Readme
-
 # Instructions for hw1
 
 In this homework we will perform a video classification task using audio-only features.
@@ -10,13 +8,10 @@ Please download data from kaggle with [this link](https://www.kaggle.com/competi
 
 ## Step-by-step baseline instructions
 
-For the baselines, we will provide code and instructions for two feature representations (MFCC-Bag-of-Features and [SoundNet-Global-Pool](https://arxiv.org/pdf/1610.09001.pdf)) and three classifiers (LR, SVM and MLP). Assuming you are under Ubuntu 18.04 system and under this directory (11775-hws/spring2021/hw1/).
+For the baselines, we will provide code (templates) and instructions for one feature representations (MFCC-Bag-of-Features and three classifiers (LR, SVM and MLP). Assuming you are under Ubuntu OS and under this directory (homework/hw1/). Open a shell terminal to run the commands.
 
-First, unzip mfcc.tgz by:
-
-```
-$ tar zxvf  mfcc.tgz
-```
+You will need to complete the code in `train_kmeans.py, get_bof.py, train_*.py, test_*.py` to get a baseline output.
+You could follow the comments we provide or you could write your own.
 
 ### MFCC-Bag-Of-Features
 
@@ -38,7 +33,11 @@ $ pip install scikit-learn pandas tqdm numpy
 
 2. Get MFCCs
 
-We already gave you the files.
+You have downloaded the files from Kaggle. First, unzip mfcc.tgz by:
+
+```
+$ tar zxvf  mfcc.tgz
+```
 
 3. K-Means clustering
 
@@ -56,7 +55,7 @@ $ python train_kmeans.py selected.mfcc.csv 50 kmeans.50.model
 
 4. Feature extraction
 
-Now we have the codebook, we will get bag-of-features (a.k.a. bag-of-words) using the codebook and the MFCCs. First, we need to get video names, we give you this videos.name.lst.
+Now we have the codebook, we will get bag-of-features (a.k.a. bag-of-words) using the codebook and the MFCCs. First, we need to get video names. We give you this in `videos.name.lst`.
 
 
 Now we extract the feature representations for each video (this would take about 7 minutes):
@@ -66,12 +65,6 @@ $ python get_bof.py kmeans.50.model 50 videos.name.lst --mfcc_path mfcc/ --outpu
 ```
 
 Now you can follow [here](#svm-classifier) to train SVM classifiers or [MLP](#mlp-classifier) ones.
-
-### SoundNet-Global-Pool
-
-Just as the MFCC-Bag-Of-Feature, we could also use the [SoundNet](https://arxiv.org/pdf/1610.09001.pdf) model to extract a vector feature representation for each video. Since SoundNet is trained on a large dataset, this feature is usually better compared to MFCCs.
-
-Please follow [this Github repo](https://github.com/eborboihuc/SoundNet-tensorflow) to extract audio features. Please read the paper and think about what layer(s) to use. If you save the feature representations in the same format as in the `bof/` folder, you can directly train SVM and MLP using the following instructions.
 
 ### SVM classifier
 
@@ -123,7 +116,7 @@ $ python test_mlp.py models/mfcc-50.mlp.model bof 50 labels/test_for_student.lab
 
 ### Submission to Kaggle
 
-You can then submit the test outputs to the leaderboard:
+You can then submit the test outputs (the `*.csv` files) to the leaderboard:
 
 ```
 https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw1/
@@ -137,8 +130,7 @@ Now here comes the fun part. You can start experimenting with the code and explo
 
 + Split `trainval.csv` into `train.csv` and `val.csv` to validate your model variants. This is important since the leaderboard limits the number of times you can submit, which means you cannot test most of your experiments on the official test set.
 + Try different number of K-Means clusters
-+ Try different layers of SoundNet
-+ Try out other audio features such as [VGGish Network](https://github.com/harritaylor/torchvggish) or [VGGSound](https://github.com/hche11/VGGSound)
-+ Try different classifiers (different SVM kernels, different MLP hidden sizes, etc.). Please refer to [sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html#sklearn.neural_network.MLPClassifier) documentation.
++ Try different hyper-parameters for your models (different SVM kernels and Cs, different MLP hidden sizes, etc.). Please refer to [sklearn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPClassifier.html#sklearn.neural_network.MLPClassifier) documentation.
 + Try different fusion or model aggregation methods. For example, you can simply average two model predictions (late fusion).
++ Try bagging and boosting
 

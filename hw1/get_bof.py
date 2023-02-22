@@ -37,9 +37,10 @@ if __name__ == '__main__':
       continue
     # (num_frames, d)
     array = numpy.genfromtxt(mfcc_path, delimiter=";")
-    # (num_frames,), each row is an integer for the clostest cluster center
 
-    # create dict containing 0 count for cluster number
+    # (num_frames,), each row is an integer for the closest cluster center
+
+    # create dict containing frequencies of each "code word"
  
     # {0: count_for_0, 1: count_for_1, ...}
 
