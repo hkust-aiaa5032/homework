@@ -26,7 +26,6 @@ if __name__ == '__main__':
   kmeans = pickle.load(open(args.kmeans_model, "rb"))
 
   # 2. iterate over each video and
-  # use kmeans.predict(mfcc_features_of_video)
   start = time.time()
   fread = open(args.file_list, "r")
   for line in tqdm(fread.readlines()):
@@ -38,6 +37,9 @@ if __name__ == '__main__':
     # (num_frames, d)
     array = numpy.genfromtxt(mfcc_path, delimiter=";")
 
+    #  ************************************TA: Your code starts here
+
+    ## use kmeans.predict(mfcc_features_of_video)
     # (num_frames,), each row is an integer for the closest cluster center
 
     # create dict containing frequencies of each "code word"
@@ -46,6 +48,8 @@ if __name__ == '__main__':
 
     # normalize the frequency by dividing with frame number
 
+
+    #  ************************************TA: Your code ends here
 
     numpy.savetxt(bof_path, list_freq)
 
