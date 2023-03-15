@@ -41,9 +41,9 @@ We use accuracy as the evaluation metric. Please refer to `**test_for_student.cs
 
 Now here comes the fun part. You can start experimenting with the code and exploring how you can improve your model performance. Some hints:
 
-+ Try different data augmentation method
-+ Try different split ratio of train and valition
-+ Try diffirent Neural Network Design
-+ Try diffirent overfitting methods(BN, dropout, Early Stopping)
-+ Try different fusion or model aggregation methods. For example, you can simply average two model predictions (late fusion)
++ Try different data augmentation methods.
++ Try different split ratio of train and validation.
++ Try diffirent Neural Network Design.
++ Try diffirent overfitting methods(BN, dropout, Early Stopping).
++ Try different fusion or model aggregation methods. For example, you can simply average two model predictions (late fusion).
 
