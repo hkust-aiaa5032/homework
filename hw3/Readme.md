@@ -4,7 +4,7 @@ In this homework we will perform a video classification task using 3D CNN.
 
 ## Data and Labels
 
-Please download data from kaggle withi this [link](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw3/data).
+Please download data from kaggle with this [link](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw3/data).
 
 ## Step-by-step baseline instructions
 
@@ -35,7 +35,7 @@ You can then submit the test outputs to the leaderboard:
 https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw3/
 ```
 
-We use accuracy as the evaluation metric. Please refer to `**test_for_student.csv**` for submission format.
+We use accuracy as the evaluation metric. Please refer to `test_for_student.csv` for submission format.
 
 ### Things to try to improve your model performance
 
