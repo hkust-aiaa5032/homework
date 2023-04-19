@@ -41,7 +41,7 @@ We use accuracy as the evaluation metric. Please refer to `**test_for_student.cs
 
 Now here comes the fun part. You can start experimenting with the code and exploring how you can improve your model performance. Some hints:
 
-+ Try to extrac different frames(other than 16) of each video with ffmpeg.
++ Try to extract different frames(other than 16) of each video with ffmpeg.
 + Try diffirent Neural Network Design.
 
 
