@@ -15,16 +15,18 @@ class MyDataset(Dataset):
         self.stage = stage
         self.ratio = ratio
         self.files = None
-        filenames = self.df[0]
-        length = len(filenames)
-        train_files = filenames[int(length * self.ratio):]
-        val_files = filenames[:int(length * self.ratio)]
-        if self.stage == "train":
-            self.files = train_files
-        elif self.stage == "val":
-            self.files = val_files
-        elif self.stage == "test":
+        filenames = self.df[0].unique()
+        if self.stage == "test":
             self.files = filenames
+        else:
+            filenames = sorted(filenames)
+            length = len(filenames)
+            train_files = filenames[int(length * self.ratio):]
+            val_files = filenames[:int(length * self.ratio)]
+            if self.stage == "train":
+                self.files = train_files
+            elif self.stage == "val":
+                self.files = val_files
 
     def __len__(self):
         return len(self.files)
