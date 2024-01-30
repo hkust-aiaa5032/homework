@@ -4,7 +4,7 @@ In this homework we will perform a video classification task (10-class classific
 
 ## Data and Labels
 
-Please download data from kaggle with [this link](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw1/data).
+Please download data from kaggle with [this link](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw1-spring-2024/data).
 
 ## Step-by-step baseline instructions
 
@@ -64,7 +64,8 @@ Now we extract the feature representations for each video (this would take about
 $ python get_bof.py kmeans.50.model 50 videos.name.lst --mfcc_path mfcc/ --output_path bof/
 ```
 
-Now you can follow [here](#svm-classifier) to train SVM classifiers or [MLP](#mlp-classifier) ones.
+<!-- Now you can follow [here](#svm-classifier) to train SVM classifiers or [MLP](#mlp-classifier) ones. -->
+We provide the training and testing of three baselines below.
 
 ### SVM classifier
 
