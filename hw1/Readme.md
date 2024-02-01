@@ -120,7 +120,7 @@ $ python test_mlp.py models/mfcc-50.mlp.model bof 50 labels/test_for_student.lab
 You can then submit the test outputs (the `*.csv` files) to the leaderboard:
 
 ```
-https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw1/
+https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw1-spring-2024/leaderboard
 ```
 
 We use accuracy as the evaluation metric. Please refer to `sample_submission.csv` for submission format.
