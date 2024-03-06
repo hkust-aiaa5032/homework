@@ -4,7 +4,7 @@ In this homework we will perform a video classification task using CNN.
 
 ## Data and Labels
 
-Please download data from kaggle withi this [link](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw2/data).
+Please download data from kaggle withi this [link](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw2-Spring-2024/data).
 
 ## Step-by-step baseline instructions
 
@@ -32,7 +32,7 @@ $ python CNN_Classifier_test2csv.py
 You can then submit the test outputs to the leaderboard:
 
 ```
-https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw2/
+https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw2-Spring-2024/
 ```
 
 We use accuracy as the evaluation metric. Please refer to `**test_for_student.csv**` for submission format.
