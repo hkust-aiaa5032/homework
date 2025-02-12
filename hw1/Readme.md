@@ -4,8 +4,7 @@ In this homework we will perform a video classification task (10-class classific
 
 ## Data and Labels
 
-Please download data from kaggle with [this link](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw1-spring-2024/data).
-
+Please download data from kaggle with [this link](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-1-spring-2025/data).
 ## Step-by-step baseline instructions
 
 For the baselines, we will provide code (templates) and instructions for one feature representations (MFCC-Bag-of-Features and three classifiers (LR, SVM and MLP). Assuming you are under Ubuntu OS and under this directory (homework/hw1/). Open a shell terminal to run the commands.
