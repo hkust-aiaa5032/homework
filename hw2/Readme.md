@@ -35,9 +35,7 @@ $ python CNN_Classifier_test2csv.py
 
 You can then submit the test outputs to the leaderboard:
 
-```
-https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2025
-```
+[https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2025](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2025)
 
 We use accuracy as the evaluation metric. Please refer to `**test_for_student.csv**` for submission format.
 
