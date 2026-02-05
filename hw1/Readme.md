@@ -4,10 +4,10 @@ In this homework we will perform a video classification task (10-class classific
 
 ## Data and Labels
 
-Please download data from kaggle with [this link](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-1-spring-2025/data).
+Please download data from kaggle with [this link](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-1-spring-2026/data).
 ## Step-by-step baseline instructions
 
-For the baselines, we will provide code (templates) and instructions for one feature representations (MFCC-Bag-of-Features and three classifiers (LR, SVM and MLP). Assuming you are under Ubuntu OS and under this directory (homework/hw1/). Open a shell terminal to run the commands.
+For the baselines, we will provide code (templates) and instructions for a feature extraction method (MFCC-Bag-of-Features) and three classifiers (LR, SVM and MLP). Assuming you are under Ubuntu OS and under this directory (homework/hw1/). Open a shell terminal to run the commands.
 
 You will need to complete the code in `train_kmeans.py, get_bof.py, train_*.py, test_*.py` to get a baseline output.
 You could follow the comments we provide or you could write your own.
@@ -68,7 +68,7 @@ We provide the training and testing of three baselines below.
 
 ### SVM classifier
 
-From the previous sections, we have extracted two fixed-length vector feature representations for each video. We will use them separately to train classifiers.
+From the previous sections, we have extracted the MFCC-Bag-of-Features representation for each video. We will use this to train different classifiers.
 
 Suppose you are under `hw1` directory. Train SVM by:
 
@@ -116,11 +116,7 @@ $ python test_mlp.py models/mfcc-50.mlp.model bof 50 labels/test_for_student.lab
 
 ### Submission to Kaggle
 
-You can then submit the test outputs (the `*.csv` files) to the leaderboard:
-
-```
-https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw1-spring-2024/leaderboard
-```
+You can then submit the test outputs (the `*.csv` files) to the [leaderboard](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-1-spring-2026/leaderboard):
 
 We use accuracy as the evaluation metric. Please refer to `sample_submission.csv` for submission format.
 
