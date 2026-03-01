@@ -51,6 +51,10 @@ Now here comes the fun part. You can start experimenting with the code and explo
 
 ## Rules for Using Predefined Model APIs and Pretrained Weights
 
+TL;DR: You are allowed to use pretrained models and weights (only ImageNet-1K pertaining is allowed).
+
+TL;DR: So this is allowed: self.resnet = models.resnet50(weights=models.ResNet50_Weights.DEFAULT). We don't want you to write 50 layers for ResNet50, etc.
+
 Regarding the purpose of HW2 is to allow all students in this course to get a basic understanding of how to use neural network to do prediction. So we though encourage, but are not requiring students to design neural network model architecture individually. Therefore, for the model architecture implementation, we allow students to (1) design model architectures by yourselves, (2) refer to published research works and reimplement the model architectures they proposed, or (3) use directly the predefined model APIs provided by pytorch. Note that regardless which way you implement your models, you should still keep the implementation inside the **models.py** file and follows similar coding conventions.
 
 As for using pretrained weights, we also allow students to train your model from pretrained weights in order to get a better performance. If you intend to use pretrained weights, we would suggest you to use those pretrained on imagenet-1k. Note that whether or not you are training from pretrained weights, you should follow the class labels given from the dataset, instead of those from imagenet-1k or other datasets.
