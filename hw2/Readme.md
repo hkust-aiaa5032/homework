@@ -4,7 +4,7 @@ In this homework we will perform a video classification task using CNN.
 
 ## Data and Labels
 
-Please download data from kaggle withi this [https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2025/data](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2025/data).
+Please download data from kaggle withi this [https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2026/data](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2026/data).
 
 ## Step-by-step baseline instructions
 
@@ -35,7 +35,7 @@ $ python CNN_Classifier_test2csv.py
 
 You can then submit the test outputs to the leaderboard:
 
-[https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2025](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2025)
+[https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2026](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2026)
 
 We use accuracy as the evaluation metric. Please refer to `**test_for_student.csv**` for submission format.
 
@@ -61,4 +61,4 @@ Here is an official pytorch reference in case you are interested you know how to
 
 ## Acknowledgement
 
-Dataset borrowed from [https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw2-Spring-2024/](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw2-Spring-2024/).
+Dataset borrowed from [https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2026/](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2026/).
