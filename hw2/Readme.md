@@ -4,7 +4,7 @@ In this homework we will perform a video classification task using CNN.
 
 ## Data and Labels
 
-Please download data from kaggle withi this [https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2026/data](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2026/data).
+Please download data from kaggle [https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2026/data](https://www.kaggle.com/competitions/hkustgz-aiaa-5032-hw-2-spring-2026/data).
 
 ## Step-by-step baseline instructions
 
@@ -12,7 +12,7 @@ We give you a video folder, video_frames_30fpv_320p. Under each sub folder, ther
 
 ### Rules
 
-You can use any or all of the 30 images to train and test your model. **You are allowed to use pretrained models and weights (only ImageNet-1K pertaining is allowed).** See this [post](https://hkust-gz.instructure.com/courses/1795/discussion_topics/12025).
+You can use any or all of the 30 images to train and test your model. **You are allowed to use pretrained models and weights (only ImageNet-1K pretraining is allowed).** See this [post](https://hkust-gz.instructure.com/courses/1795/discussion_topics/12025).
 
 ### CNN classifier
 
